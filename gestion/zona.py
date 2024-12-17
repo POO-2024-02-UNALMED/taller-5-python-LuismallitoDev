@@ -8,11 +8,7 @@ class Zona:
         self._animales.append(animal)
         
     def cantidadAnimales(self):
-        i = 0
-        for animal in self._animales:
-            if(animal != None):
-                i += 1
-        return i
+        return len(self._animales)
     #Getters y Setters
     def getNombre(self):
         return self._nombre
