@@ -17,26 +17,14 @@ class Animal():
         from zooAnimales.mamifero import Mamifero
         from zooAnimales.pez import Pez
         from zooAnimales.reptil import Reptil
-        return ("Mamiferos: " + str(Mamifero.cantidadMamiferos()) + "\n" +
-                "Aves: " + str(Ave.cantidadAves()) + "\n" +
-                "Reptiles: " + str(Reptil.cantidadReptiles()) + "\n" +
-                "Peces: " + str(Pez.cantidadPeces()) + "\n" +
-                "Anfibios: " + str(Anfibio.cantidadAnfibios())
-                )
+        return f"Mamiferos : {Mamifero.cantidadMamiferos()}\nAves : {Ave.cantidadAves()}\nReptiles : {Reptil.cantidadReptiles()}\nPeces : {Pez.cantidadPeces()}\nAnfibios : {Anfibio.cantidadAnfibios()}"
     def movimiento():
         return "desplazarse"
     def toString(self):
-        if(self._zona != None):
-            return(
-                "Mi nombre es " + self._nombre + ", tengo una edad de " + str(self._edad) + ", habito en " + self._habitat
-                    + " y mi genero es " + self._genero + "la zona en la que me ubico es " + self._zona + ", en el "
-                    + self._zona.getZoo()
-            )
+        if self._zona is None:
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
         else:
-            return(
-                "Mi nombre es " + self._nombre + ", tengo una edad de " + str(self._edad) + ", habito en " + self._habitat
-                    + " y mi genero es " + self._genero
-            )
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}, la zona en la que me ubico es {self._zona}, en el {self._zona.zoo}"
     #Getters y setters
     
     def getNombre(self):
