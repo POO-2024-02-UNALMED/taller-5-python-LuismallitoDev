@@ -1,4 +1,5 @@
 from Animal import Animal
+from gestion import *
 class Anfibio(Animal):
     _listado = []
     ranas = 0

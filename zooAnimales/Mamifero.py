@@ -1,5 +1,5 @@
 from Animal import Animal
-
+from gestion import *
 class Mamifero(Animal):
     _listado = []
     caballos = 0

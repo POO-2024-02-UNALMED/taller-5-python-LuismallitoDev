@@ -1,4 +1,5 @@
 from Animal import Animal
+from gestion import *
 class Ave(Animal):
     _listado = []
     halcones = 0

@@ -1,4 +1,5 @@
 import Animal
+from gestion import *
 class Reptil(Animal):
     _listado = []
     iguanas = 0

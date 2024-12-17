@@ -1,3 +1,4 @@
+from zooAnimales import *
 class Zona:
     def __init__(self,nombre, zoo, animales):
         self._nombre = nombre
