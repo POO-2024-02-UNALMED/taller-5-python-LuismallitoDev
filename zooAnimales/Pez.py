@@ -1,5 +1,4 @@
-from Animal import Animal
-from gestion import *
+from zooAnimales.animal import Animal
 class Pez(Animal):
     _listado = []
     salmones = 0
