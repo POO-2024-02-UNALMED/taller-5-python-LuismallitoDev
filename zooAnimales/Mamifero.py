@@ -9,4 +9,12 @@ class Mamifero(Animal):
         self._pelaje = pelaje
         self._patas = patas
         Mamifero.listado.append(self)
-        
+    
+    def crearCaballo(nombre,edad,genero):
+        Mamifero.caballos += 1
+        caballo = Mamifero(nombre,edad, "pradera",genero,True,4)
+    def crearLeon(nombre,edad,genero):
+        Mamifero.leones += 1
+        leon = Mamifero(nombre,edad, "selva",genero,True,4)
+    def cantidadMamiferos():
+        return len(Mamifero.listado)

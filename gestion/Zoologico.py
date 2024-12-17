@@ -4,8 +4,24 @@ class Zoologico:
         self._ubicacion = ubicacion
         self._zonas = zonas
     
-    def agregarZonas():
-        pass
+    def agregarZonas(self,zona):
+        self._zonas.append(zona)
     
-    def cantidadTotalAnimales():
-        pass
+    def cantidadTotalAnimales(self):
+        i = 0
+        for zona in self._zonas:
+            i += zona.cantidadTotalAnimales()
+        return i
+    #Getters y Setters
+    def setNombre(self, nombre):
+        self._nombre = nombre
+    def setUbicacion(self, ubicacion):
+        self._ubicacion = ubicacion
+    def setZonas(self,zonas):
+        self._zonas = zonas
+    def getNombre(self):
+        return self._nombre
+    def getUbicacion(self):
+        return self._ubicacion
+    def getZonas(self):
+        return self._zonas
