@@ -12,7 +12,7 @@ class Animal():
         self._genero = genero
         self._zona = zona
         Animal.totalAnimales += 1
-    def size():
+    def getTotalAnimales():
         return Animal.totalAnimales
     def totalPorTipo():
         return ("Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" +
@@ -35,6 +35,31 @@ class Animal():
                 "Mi nombre es " + self._nombre + ", tengo una edad de " + self._edad + ", habito en " + self._habitat
                     + " y mi genero es " + self._genero
             )
-    @classmethod
-    def getTotalAnimales(cls):
-        return cls.totalAnimales
+    #Getters y setters
+    
+    def getNombre(self):
+        return self._nombre
+    
+    def setNombre(self, nombre):
+        self._nombre = nombre
+    def getEdad(self):
+        return self._edad
+    
+    def setEdad(self, edad):
+        self._edad = edad
+    def getHabitat(self):
+        return self._habitat
+    
+    def setHabitat(self, habitat):
+        self._habitat = habitat
+    def getGenero(self):
+        return self._genero
+    
+    def setGenero(self, genero):
+        self._genero = genero
+    def getZona(self):
+        return self._zona
+    
+    def setZona(self, zona):
+        self._zona = zona
+    
