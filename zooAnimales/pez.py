@@ -7,6 +7,7 @@ class Pez(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._colorEscamas = colorEscamas
         self._cantidadAletas = cantidadAletas
+        Pez._listado.append(self)
     def movimiento():
         return "nadar"
     def crearSalmon(nombre,edad,genero):
