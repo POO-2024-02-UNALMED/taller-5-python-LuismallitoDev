@@ -1,5 +1,5 @@
 class Zoologico:
-    def __init__(self, nombre, ubicacion, zonas=None):
+    def __init__(self, nombre=None, ubicacion=None, zonas=None):
         self._nombre = nombre
         self._ubicacion = ubicacion
         self._zonas = zonas if zonas is not None else []
